@@ -46,3 +46,20 @@ function clearCart() {
   localStorage.removeItem('cart');
   displayCartItems();
 }
+
+function completePurchase() {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  if (cart.length === 0) {
+    alert("Your cart is empty. Add items before completing your purchase.");
+    return;
+  }
+
+  const confirmation = confirm("Have you sent payment via CashApp or PayPal?");
+  if (confirmation) {
+    alert("Thank you for your purchase! Your order has been submitted.");
+    clearCart();
+  } else {
+    alert("Please complete your payment before submitting your order.");
+  }
+}
+
