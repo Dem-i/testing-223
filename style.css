@@ -9,8 +9,6 @@ body, h1, h2, h3, p, ul, li, a, img {
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #222;
   padding: 20px;
   transition: background 0.4s ease, color 0.4s ease;
 }
@@ -27,7 +25,6 @@ nav a {
   transition: color 0.3s ease;
 }
 
-/* HERO & COMMON IMAGES */
 .hero img, .about-section img, .order-item img, .gallery img {
   max-width: 100%;
   height: auto;
@@ -35,32 +32,31 @@ nav a {
   border-radius: 8px;
 }
 
-/* FOOTER */
 footer {
   margin-top: 40px;
   font-size: 0.9em;
 }
 
-/* ===== THEME: HOME - Minimal & Elegant ===== */
+/* ===== THEME: HOME - Minimal + White/Gold ===== */
 body.theme-home {
-  background: #ffffff;
-  color: #333;
+  background: #fffefc;
+  color: #1e1e1e;
 }
-body.theme-home nav a { color: #000; }
-body.theme-home nav a:hover { color: #b59a3d; }
+body.theme-home nav a { color: #222; }
+body.theme-home nav a:hover { color: #d4af37; }
 body.theme-home .payment-options {
-  background: #fffdf3;
-  border-left: 4px solid #b59a3d;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  background: #fdf7e3;
+  border-left: 6px solid #d4af37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
 }
 
 /* ===== THEME: ABOUT - Warm & Inviting ===== */
 body.theme-about {
-  background: #fffaf5;
-  color: #4b2c20;
+  background: #fff8f2;
+  color: #5b3a2b;
 }
-body.theme-about nav a { color: #7b4a33; }
-body.theme-about nav a:hover { color: #c97c5d; }
+body.theme-about nav a { color: #a86447; }
+body.theme-about nav a:hover { color: #e7a07f; }
 .about-section {
   max-width: 800px;
   margin: auto;
@@ -69,112 +65,113 @@ body.theme-about nav a:hover { color: #c97c5d; }
 
 /* ===== THEME: GALLERY - Bold & Vibrant ===== */
 body.theme-gallery {
-  background: #11121a;
-  color: #ffffff;
+  background: #0d0c1d;
+  color: #f1f1f1;
 }
-body.theme-gallery nav a { color: #ff6b6b; }
-body.theme-gallery nav a:hover { color: #38b6ff; }
+body.theme-gallery nav a { color: #e63946; }
+body.theme-gallery nav a:hover { color: #457b9d; }
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
+  gap: 20px;
+  padding: 30px;
 }
 .gallery-grid img {
-  border: 3px solid #ff6b6b;
+  border: 4px solid #e63946;
   border-radius: 6px;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 .gallery-grid img:hover {
-  transform: scale(1.05);
-  border-color: #38b6ff;
+  transform: scale(1.07);
+  border-color: #1d3557;
 }
 
 /* ===== THEME: ORDER - Moody & Gothic ===== */
 body.theme-order {
-  background: #0f0f0f;
-  color: #fefefe;
+  background: #0a0a0a;
+  color: #f5f5f5;
 }
-body.theme-order nav a { color: #999; }
-body.theme-order nav a:hover { color: #d43759; }
+body.theme-order nav a { color: #b3a1aa; }
+body.theme-order nav a:hover { color: #7f1d1d; }
 .order-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 25px;
+  padding: 25px;
 }
 .order-item {
-  background: #1a1a1a;
-  padding: 15px;
-  border: 1px solid #444;
+  background: #1c1c1c;
+  padding: 20px;
+  border: 1px solid #555;
   border-radius: 8px;
   text-align: center;
 }
 .order-item button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #d43759;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #7f1d1d;
   border: none;
   color: white;
   border-radius: 4px;
   cursor: pointer;
 }
 .order-item button:hover {
-  background-color: #9c1e3d;
+  background-color: #510909;
 }
 
 /* ===== THEME: CART - Sleek & Modern ===== */
 body.theme-cart {
-  background: #1b1c1f;
-  color: #e2e2e2;
+  background: #131417;
+  color: #cfd8dc;
 }
-body.theme-cart nav a { color: #ddd; }
-body.theme-cart nav a:hover { color: #4db8ff; }
+body.theme-cart nav a { color: #9fb1c1; }
+body.theme-cart nav a:hover { color: #00bfff; }
 #cart-items {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  background: #2a2b2f;
+  background: #1e1f23;
   border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,191,255, 0.2);
 }
 #cart-items ul {
   list-style-type: none;
   margin-top: 10px;
 }
 #cart-items li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-/* ===== THEME: CONTACT - Ethereal & Calm ===== */
+/* ===== THEME: CONTACT - Calm & Ethereal ===== */
 body.theme-contact {
-  background: #f1f4fa;
+  background: #e8ecf9;
   color: #333;
 }
-body.theme-contact nav a { color: #445a75; }
-body.theme-contact nav a:hover { color: #7e93a6; }
+body.theme-contact nav a { color: #607d8b; }
+body.theme-contact nav a:hover { color: #90caf9; }
 .contact-form {
   max-width: 600px;
   margin: auto;
   background: #ffffff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(128, 138, 167, 0.2);
 }
 form input, form textarea, form select {
   width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
+  margin-bottom: 18px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 form button {
-  background-color: #6b9bd1;
+  background-color: #7986cb;
   color: white;
-  padding: 10px 16px;
+  padding: 12px 18px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 form button:hover {
-  background-color: #547fb4;
+  background-color: #5c6bc0;
 }
