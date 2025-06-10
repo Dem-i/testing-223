@@ -23,11 +23,23 @@ function displayCartItems() {
   let total = 0;
   cartSection.innerHTML = '<h2>Items in Your Cart:</h2><ul>';
   cart.forEach((item, index) => {
-    cartSection.innerHTML += `<li>${index + 1}. ${item.title} - $${item.price}</li>`;
     total += parseFloat(item.price);
+    cartSection.innerHTML += `
+      <li>
+        ${item.title} - $${item.price.toFixed(2)} 
+        <button onclick="removeFromCart(${index})" style="margin-left:10px;color:red;">✖</button>
+      </li>`;
   });
   cartSection.innerHTML += `</ul><p><strong>Total: $${total.toFixed(2)}</strong></p>`;
 }
+
+function removeFromCart(index) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.splice(index, 1);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  displayCartItems();
+}
+
 
 // Optional: Clear cart
 function clearCart() {
