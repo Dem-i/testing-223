@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | Haley's Handmade Items</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="displayCartItems()">
+  <header class="minimal">
+    <h1>Your Cart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order Art</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <div id="cart-items"></div>
+      <p id="total"></p>
+
+      <h3>Complete Your Purchase</h3>
+      <p>After reviewing your order, please send payment using one of the following methods. Be sure to include your name and the items you're ordering in the notes:</p>
+      <ul>
+        <li><strong>CashApp:</strong> $HaleysHandmadeItems</li>
+        <li><strong>PayPal:</strong> <a href="https://www.paypal.me/YourSister" target="_blank">paypal.me/YourSister</a></li>
+        <li><strong>Credit/Debit:</strong> (Stripe checkout coming soon)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Haley's Handmade Items. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

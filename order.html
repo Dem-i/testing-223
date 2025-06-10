@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Art | Haley's Handmade Items</title>
+  <link rel="stylesheet" href="style.css" />
+<!-- Lightbox2 Styles -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+<body>
+  <header class="minimal">
+    <h1>Order Original Art</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order Art</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <p>Select from the available pieces below. Click "Add to Cart" to begin your purchase.</p>
+      <div class="order-grid">
+        <!-- Example item -->
+        <div class="order-item">
+          <img src="art1.jpg" alt="Artwork 1" />
+          <h3>Sunset Painting</h3>
+          <p class="price">$45.00</p>
+          <button onclick="addToCart('Sunset Painting', 45.00)">Add to Cart</button>
+        </div>
+
+        <div class="order-item">
+          <img src="art2.jpg" alt="Artwork 2" />
+          <h3>Crochet Cat</h3>
+          <p class="price">$30.00</p>
+          <button onclick="addToCart('Crochet Cat', 30.00)">Add to Cart</button>
+        </div>
+
+        <!-- Add more items as needed using the same pattern -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Haley's Handmade Items. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<!-- Lightbox2 Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+</html>
